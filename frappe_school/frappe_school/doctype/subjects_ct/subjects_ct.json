@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:subject",
+ "creation": "2024-08-24 01:18:47.813270",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "estimate"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject",
+   "options": "Subject",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "depends_on": "eval:doc.subject",
+   "fieldname": "estimate",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Estimate",
+   "options": "excellent\nvery good\ngood\nacceptable\nfailed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-24 10:53:56.259830",
+ "modified_by": "Administrator",
+ "module": "frappe-school",
+ "name": "Subjects CT",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
